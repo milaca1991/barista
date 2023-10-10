@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -43,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #e8e4e4;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -66,4 +66,132 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/*estilos app*/
+#root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: auto;
+  position: relative;
+}
+
+.mini-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 10vw;
+}
+
+.mini-header{
+  height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(226, 195, 147);
+  text-align: center;
+  border-radius: 10px;
+  width: 93%;
+  margin: 0;
+}
+
+#wrong {
+  background-color:rgb(219, 93, 93);
+}
+
+#correct {
+  background-color:rgb(191, 116, 191);
+}
+
+.answer-space {
+  background-color: rgb(226, 195, 147);
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  clear: both;
+}
+
+li {
+  margin-top:3px;
+  margin-bottom:3px;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #FFFDD0;
+  border-radius: 15px;
+}
+
+button.newdrink {
+  width: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(138, 98, 12, 0.942);
+  font-weight: bold;
+  color: white;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.drink-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonSpace{
+
+display: flex;
+flex-direction: row;
+}
+
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    padding: 20px; /* Añadir espacio en los márgenes */
+  }
+
+  .container {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: center;
+  }
+
+  .mini-container {
+    width: 80%; /* Reducir el ancho */
+  }
+
+  .title-container {
+    text-align: center; /* Centrar el título en pantallas más pequeñas */
+  }
+
+  /* Agregar más reglas según sea necesario */
 }
